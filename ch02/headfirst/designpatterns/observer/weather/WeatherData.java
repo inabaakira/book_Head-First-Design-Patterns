@@ -1,9 +1,11 @@
 // -*- mode: java; coding: utf-8 -*-
 // file: WeatherData.java
 //     Created:       <2020/01/09 10:02:26>
-//     Last Modified: <2020/01/10 10:57:35>
+//     Last Modified: <2020/01/11 18:48:34>
 
 package headfirst.designpatterns.observer.weather;
+
+import java.util.*;
 
 public class WeatherData implements Subject {
     private ArrayList<Observer> observers;
@@ -11,7 +13,7 @@ public class WeatherData implements Subject {
     private float humidity;
     private float pressure;
 
-    public WeatherData {
+    public WeatherData() {
         observers = new ArrayList<Observer>();
     }
 
